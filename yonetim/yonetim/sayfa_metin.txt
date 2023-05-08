@@ -1,0 +1,53 @@
+<?php 
+require_once 'panel/config.php';
+$l=explode("/", $_SERVER['REQUEST_URI']);
+$isim=end($l);
+
+$sayfa=$crud->tek("SELECT * FROM sayfalar WHERE link='".guvenlik($isim)."'");
+
+$meta_baslik=$sayfa['baslik']." | ".$ayarcek['site_baslik'];
+$meta_aciklama=mb_substr(strip_tags($sayfa['icerik']), 0,160);
+$meta_one_cikan=dosya.$ayarcek['site_logo'];
+
+
+require_once 'header.php'; 
+require_once 'topbar.php';
+require_once 'ust_menu.php';
+?>
+
+
+
+<section class="fl-page-title">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-inner flex">
+                    <div class="page-title-heading">
+                        <h1 class="heading"><?php echo $sayfa['baslik'] ?></h1>
+                    </div>
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="<?php echo yol ?>">Ana Sayfa</a></li>
+                            <li><?php echo $sayfa['baslik'] ?></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="tf-section item-details-page mb-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="sc-product-item p-5">
+                  <?php echo $sayfa['icerik'] ?>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<?php require_once 'footer.php'; ?>

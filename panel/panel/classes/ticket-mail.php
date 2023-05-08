@@ -1,0 +1,9 @@
+<?php 
+$mailtablo='<table class="table table-bordered table-dark" style="background-color: #212529;border-collapse: collapse;border: 0px;box-sizing: border-box;color: white;font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, &quot;Helvetica Neue&quot;, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;margin-bottom: 1rem;width: fit-content;min-width: 40%;"><thead style="box-sizing: border-box;">
+<tr style="box-sizing: border-box;"><th colspan="2" scope="col" style="border-color: rgb(50, 56, 62); border-image: initial; border-style: solid; border-width: 1px 1px 2px; box-sizing: border-box; padding: 0.75rem; vertical-align: bottom;">Detaylar</th></tr>
+</thead><tbody class="table-light text-dark" style="background-color: #fdfdfe; box-sizing: border-box; color: rgb(52, 58, 64) !important;">
+<tr style="box-sizing: border-box;"><th scope="row" style="border: 1px solid rgb(50, 56, 62); box-sizing: border-box; padding: 0.75rem; vertical-align: top;">Konu</th><th style="border: 1px solid rgb(50, 56, 62); box-sizing: border-box; padding: 0.75rem; vertical-align: top;">'.$konu.'</th></tr>
+<tr style="box-sizing: border-box;"><th scope="row" style="border: 1px solid rgb(50, 56, 62); box-sizing: border-box; padding: 0.75rem; vertical-align: top;">Departman</th><th style="border: 1px solid rgb(50, 56, 62); box-sizing: border-box; padding: 0.75rem; vertical-align: top;">'.$departman.'</th></tr>
+<tr style="box-sizing: border-box;"><th scope="row" style="border: 1px solid rgb(50, 56, 62); box-sizing: border-box; padding: 0.75rem; vertical-align: top;">Aciliyet</th><th style="border: 1px solid rgb(50, 56, 62); box-sizing: border-box; padding: 0.75rem; vertical-align: top;">'.$aciliyet.'</th></tr>
+</tbody></table>';
+ ?>
